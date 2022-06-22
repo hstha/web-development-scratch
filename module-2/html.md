@@ -11,7 +11,9 @@
 
 - An element has an opening tag and a closing tag.
 
-  ![alt html element](./html-element.png))]
+  ![alt html element](./images/html-element.png)
+
+  fig: HTML element
 
 - In terms of defining and organizing content, there are two types of elements:
   - Elements used to define content.
@@ -39,7 +41,9 @@
 - An attribute is a name-value pair that is placed inside the opening tag of an element.
 - It us used to give the browser extra information about that element.
 
-![alt html attribute](./html-attribute.png))]
+![alt html attribute](./images/html-attribute.png)
+
+fig: Element Attribute
 
 ## Nesting Elements
 
@@ -117,13 +121,20 @@
 
   - It is used to define document structure
   - Think of them like a table of contents
+  - It is the hierarchical structure of the document.
   - There are 6 types of headings:
     - `h1`:
+      - One per page
     - `h2`:
+      - One per section
     - `h3`:
+      - One per subsection
     - `h4`:
+      - One per subparagraph
     - `h5`:
+      - One per subparagraph
     - `h6`:
+      - One per subparagraph
 
 - **PARAGRAPH**:
 - **LIST**:
@@ -175,3 +186,37 @@
   </body>
 </html>
 ```
+
+## Structuring Page Tags:
+
+- These are the tags that are used to structure the page where each tag has its own semantic meaning.
+- These are HTML 5 elements:
+  - Header
+  - Nav
+  - Main
+  - Section
+  - Article
+  - Footer
+  - Aside
+  - Figure
+  - FigureCaption
+  - FigureGroup
+  - FigureRow
+  - FigureRowGroup
+  - FigureCol
+  - FigureColGroup
+  - FigureCaption
+
+## Semantics
+
+- Certain elements have a meaning attached to it.
+- Semantic elements have certain element attached to it.
+- Not all the html elements have a meaning attached to it.
+  - Eg: `div`, `b`, `i`
+
+### Why learning about semantics are important?
+
+- SEO
+- Accessibility
+- Performance
+- Usability
