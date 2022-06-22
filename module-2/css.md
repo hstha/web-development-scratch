@@ -362,3 +362,56 @@ a:active {
           - Element is removed from the normal flow: "out of flow".
           - Text and inline elements will wrap around the floated element.
           - The container will not adjust its height to the element.
+
+          ```css
+          /* Syntax */
+          float: left | right;
+          ```
+
+          - Sometimes float gives us problem as it floats the element out from its parent element.
+            - If all child elements are floated than its parent element won't occupy its children container. This will give problem.
+            - To fix this problem, we have to clear the float.
+            ```css
+            .clearfix::after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+            ```
+
+        ![alt Positioning Mode](./images/positioning-mode.png)
+
+## Layout
+
+- Layout is the way text, images and other content is placed and arranged on a webpage.
+- Layout gives the page a visual structure, into which we place our content.
+- **Building a layout** is arranging page elements into a visual structure, instead of simply having them placed one after another.
+- Why layout is important?
+  - Layout makes our site easy to understand and visually pleasing.
+- Types of layout?
+
+  - Component Layout
+  - Page Layout
+
+  ![alt types of layout](./images/types-of-layout.png)
+  fig: Types of Layout
+
+- Ways to build the layout:
+
+  - Float
+  - Flex box
+  - CSS Grid
+
+  ![alt ways to build layout](./images/ways-to-build-layout.png)
+  fig: Ways to build layout
+
+### Float
+
+- Element is removed from the normal flow: "out of flow".
+- Text and inline elements will wrap around the floated element.
+- The container will not adjust its height to the element.
+
+```css
+/* Syntax */
+float: left | right;
+```
