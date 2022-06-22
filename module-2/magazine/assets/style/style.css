@@ -24,15 +24,18 @@ body {
 
 .main-header h1 {
   padding-top: 15px;
+  float: left;
 }
 
 nav {
   font-size: 18px;
+  float: right;
 }
 
 article {
   margin-bottom: 60px;
   width: 60%;
+  float: left;
 }
 
 .post-header {
@@ -43,9 +46,20 @@ article {
   margin-bottom: 20px;
 }
 
+.author-box img {
+  float: left
+}
+
 .author-box p {
+  float: left;
   padding-left: 20px;
   padding-top: 10px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 aside {
@@ -54,6 +68,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
   width: 500px;
+  float: right;
 }
 
 h1,
