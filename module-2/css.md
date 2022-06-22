@@ -415,3 +415,58 @@ a:active {
 /* Syntax */
 float: left | right;
 ```
+
+### Flex box
+
+- Flexbox is a set of related **CSS properties** for **building 1-D layouts**.
+- THe main idea behind flexbox is that empty space inside a container element can be **automatically divided** by its child elements.
+- Flexbox makes it easy to automatically **align items to one another** inside a parent container, both horizontally and vertically.
+- Flexbox solves common problems such as **vertical centering** and creating **equal-height columns**.
+- Flexbox is perfect for **replacing floats**, allowing us to write fewer and cleaner HTML and CSS code.
+
+![alt flexbox terminology](./images/flex-terminology.png)
+fig: Flexbox Terminology
+
+- We generally don't give width of the flex item, the width is calculated automatically by the browser based on flex-grow, flex-shrink and flex-basic properties.
+- Similar goes for margin and padding.
+
+```css
+  /* For Flex Container */
+
+  - gap: 0 | <string>; /* create space between items, without using margin */
+  /*
+    - determines how the content of the flex box should be placed vertically (i.e main axis).
+    - In all other align-items value except for stretch, the flex box children occupies its respective content height, not the highest hight.
+    - In align-items value for stretch, all the flex box children occupies same height i.e. the highest height.
+  */
+  - align-items: baseline | center | flex-start | flex-end | stretch (default);
+  - justify-content: flex-start (default) | flex-end | center | space-around | space-between | space-evenly; /* determines how the content of the flex box should be placed horizontally (i.e. cross axis). */
+  - flex-direction: row (default) | row-reverse | column | column-reverse; /* define which is the main axis */
+  - flex-wrap: nowrap (default) | wrap | wrap-reverse; /* allow items to wrap into a new line if they are too large */
+  - align-content: stretch (default) | flex-start | flex-end | center | space-between | space-around; /* applies when there are multiple lines i.e when flex-wrap: wrap */
+```
+
+```css
+/* For Flex items */
+
+- align-self: auto (default) | stretch | flex-start | flex-end | center | baseline; /* overwrite align-items for individual flex items */
+
+/*
+  - allow an element to grow (0 means no, 1+ means yes)
+  - by "grow" it means to fill up the available free space in the container.
+  - flex-grow: 2 means that element will get maximum width of its content's width + 2 * available free space.
+*/
+- flex-grow: 0 | <int>;
+/*
+  - allow an element to shrink (0 means no, 1+ means yes)
+  - by shrink it means if there is no available space to fit all the elements in the container than it will shrink the width of an element by the browser automatically
+*/
+- flex-shrink: 1 | <int>;
+/*
+  - define an item's width, instead of the width property.
+  - doesn't guarantee that the element will get the given width.
+*/
+- flex-basis: auto | <length>;
+- flex: 0 1 auto | <int> <int> <string>; /* recommended shorthand for flex-grow, flex-shrink and flex-basis */
+- order: 0 | <int>; /* controls order of items. -1 makes item first, as value increases the items are shifted to right */
+```

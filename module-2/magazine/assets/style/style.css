@@ -14,28 +14,33 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
-.main-header h1 {
-  padding-top: 15px;
-  float: left;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 nav {
   font-size: 18px;
-  float: right;
 }
 
 article {
   margin-bottom: 60px;
   width: 60%;
-  float: left;
 }
 
 .post-header {
@@ -46,20 +51,9 @@ article {
   margin-bottom: 20px;
 }
 
-.author-box img {
-  float: left
-}
-
 .author-box p {
-  float: left;
   padding-left: 20px;
   padding-top: 10px;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: block;
 }
 
 aside {
@@ -67,8 +61,11 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
-  float: right;
+  align-self: flex-start;
+}
+
+aside h4 {
+  margin-bottom: 20px;
 }
 
 h1,
