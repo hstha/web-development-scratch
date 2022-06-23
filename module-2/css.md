@@ -470,3 +470,67 @@ fig: Flexbox Terminology
 - flex: 0 1 auto | <int> <int> <string>; /* recommended shorthand for flex-grow, flex-shrink and flex-basis */
 - order: 0 | <int>; /* controls order of items. -1 makes item first, as value increases the items are shifted to right */
 ```
+
+### CSS Grid
+
+- CSS Grid is a set of CSS properties for building 2-D layouts.
+- The main idea behind CSS Grid is that we divide a container element into rows and columns that can be filled with its child elements.
+- In 2-D contexts, CSS Grid allows us to write less nested HTML and easier-to-read CSS
+- CSS Grid is not meant to replace flexbox! Instead, they work perfectly together. Need a 1-D layout? Use flexbox. Need a 2-D layout? Use CSS Grid
+
+![alt CSS Grid Terminology](./images/css-grid-terminology.png)
+
+![alt CSS Grid Terminologies](./images/css-grid-terminologies-more.png)
+fig: CSS Grid Terminologies
+
+`Note: By default if height of a grid item is set than, all the gird items will have the same height unless its content overflow.`
+
+```css
+/* Grid Container */
+
+/*
+  To establish the grid row and column tracks. One length unit for each track. Any unit can be used, new fr fills unused space
+  Eg:
+    grid-template-rows: 20px 30px 40px;
+    grid-template-rows: 2fr 3fr 4fr;
+    grid-template-rows: 2fr 30px auto;
+    grid-template-rows: repeat(4, 1fr); // it means. grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    - fr stands for fraction, this means x fr of the available space
+    - when template of row or column is set to auto, that row or column only occupies the space necessary for its content.
+*/
+- grid-template-rows: <track-size>;
+  grid-template-columns: <track-size>;
+
+/* To create empty space between tracks */
+- row-gap: 0 (default) | string;
+  column-gap: 0 (default) | string;
+  gap: 0 (default) | string;
+
+/* To align items inside grid cell horizontally and vertically */
+- justify-items: stretch (default) | start | center | end;
+  align-items: stretch (default) | start | center | end;˚∑
+
+/* To align entire gird inside grid container. Only applies if container is larger than the grid. */
+- justify-content: stretch (default) | start | center | end;
+  align-content: stretch (default) | start | center | end;
+```
+
+```css
+/* Grid Items */
+
+/*
+  To place a grid item into a specific cell, based on line numbers. span keyword can be used to span an item across more cells.
+  Eg:
+    grid-column: 1 / 5;
+    grid-column: 1 / span 4; // this means start from grid line no. 1 upto 1 + 4 = grid line no. 5
+
+    The above example are equivalent.
+*/
+- grid-column: <start-line> / <end-line> | span number;
+  grid-row: <start-line> / <end-line> | span number;
+
+/* To overwrite justify-items / align-items for single items */
+- justify-self: stretch (default) | start | center | end;
+  align-self: stretch (default) | start | center | end;
+```

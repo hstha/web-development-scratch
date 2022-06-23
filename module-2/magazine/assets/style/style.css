@@ -11,17 +11,41 @@ body {
   position: relative;
 }
 
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+
+}
+
+aside {
+
+}
+
+footer {
+  grid-column: 1/ -1;
+}
+/* Layout end */
+
 .container {
   width: 1400px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,18 +53,11 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
-  width: 60%;
 }
 
 .post-header {
