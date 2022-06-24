@@ -245,6 +245,14 @@
 7. Experiment with changing shadows on mouse interaction (`like click and hover`)
 8. Experiment with colored shadows to added glows in the element
 
+#### **Border Radius**
+
+`Use Border Radius Well`
+
+1. Use border-radius to `increase the playfulness` and fun of the design, to make it `less serious`
+2. Typefaces have a certain roundness: make sure that border-radius `matches that roundness`.
+3. Use border-radius on `buttons, images, around icons, standout sections` and `other elements`.
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
