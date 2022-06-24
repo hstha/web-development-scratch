@@ -197,6 +197,31 @@
 
 12. When using multiple images side-by-side, make sure they have the exact same dimensions
 
+#### **Icons**
+
+`Use Good Icons`
+
+1. Use a `good icon pack` or emojis
+
+- `Tools used`: **Phosphor icons, ionicons, icons8, heroicons**
+
+2. Use only one icon pack. Don't mix icons from different icon packs
+3. Use SVG icons or icon fonts. Don't use bitmap image formats (.jpg and .png) as they are difficult to scale.
+4. Adjust to website personality. `Roundness, weight and filled.outlined` depend on typography
+
+`When To Use Icons`
+
+5. Use icons to `provide visual assistance` to text
+6. Use icons for `product feature blocks`
+7. Use icons `associated with actions`, and `label them` (unless no space or icon is 100% clear)
+8. Use icons `as bullet points`
+
+`Use Icons Well`
+
+9. To keep icons neutral, `use same color as text`. To draw more attention, `use different color`
+10. Don't confuse your users: icons need to make sense and `fit the text or action`
+11. Don't make icons larger than what they **were designed for**. If needed, **enclose them in a shape**
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
