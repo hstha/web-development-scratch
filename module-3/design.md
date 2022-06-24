@@ -156,6 +156,47 @@
 - Contrast ratio needs to be at least `4:5:1 for normal text` and `3:1 for larger text` (18px+)
 - `Tools used`: **coolors**
 
+#### **Images**
+
+`Use Good Images`
+
+1. Different types of images: `product photos, storytelling photos, illustrations, patterns`
+
+- Product Photos:
+- Storytelling photos:
+- Illustrations:
+- Patterns
+
+2. Use images to support website's `message and story`. So only use `relevant images`.
+3. Prefer `original images`. If not possible, use `original-looking` stock images (not generic ones)
+
+`Tools used`: **Unsplash, Pexels, DrawKit, unDraw**
+
+`Use Images Well`
+
+4. Try to show `real people` to trigger user's emotions
+5. If necessary, `crop images` to fit your message
+6. Experiment `combining` photos, illustrations and patterns
+
+`Handling Text On Images`
+
+7. `Method #1`: Darker or brighten image (completely or partially, using a gradient)
+8. `Method #2`: Position text into neutral image area. By neutral image area means the area containing constant or uniform color.
+9. `Method #3`: Put text in a box with some opacity if possible.
+
+`Some Technical Details`
+
+10. To account for `high-resolution screens`, make image dimensions `2x as big` as their displayed size
+
+- `Scale factor`: Actual pixels the screen contains / Pixels represented on screen
+- On high-resolution screens, scale factor is 2x or event 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+
+11. `Compress images` for a lower file size and better performance
+
+- `Tools used`: **Squoosh**
+
+12. When using multiple images side-by-side, make sure they have the exact same dimensions
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
