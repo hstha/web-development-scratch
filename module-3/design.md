@@ -30,6 +30,80 @@
 
 `NOTE: Design decisions for each ingredient are based on website personality.`
 
+#### **Typography**
+
+- Typography is the art and technique of arranging type to make written language **legible**, **readable** and **appealing** when displayed.
+- Typography is all about making text beautiful and easy to read.
+
+##### SERIF And SANS-SERIF Typefaces
+
+| Serif Typeface                                                               | Sans-Serif Typeface                                                               |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| <img src="./images/typefaces/serif-typeface.png" width="150" height="150" /> | <img src="./images/typefaces/sans-serif-typeface.png" width="150" height="150" /> |
+| Creates a traditional/classic look and feel                                  | Modern look and feel                                                              |
+| Conveys trustworthiness                                                      | Clean and simple                                                                  |
+| Good for long text                                                           | **Easier to choose for beginner designer**                                        |
+
+#### How to get good typography
+
+`Typefaces`
+
+1. Always use good and popular typefaces and play it safe.
+
+| Sans Serif Font                                                | Serif Font                                           |
+| -------------------------------------------------------------- | ---------------------------------------------------- |
+| ![alt sans serif font](./images/typefaces/sans-serif-font.png) | ![alt serif font](./images/typefaces/serif-font.png) |
+
+2. It's okay to use just one typeface per page. If you want more limit to 2 typefaces.
+3. Choose the **right typeface** according to your website personality:<br />
+   a. Choose the right personality for website <br />
+   b. Decide between a serif and sans-serif typeface <br />
+   c. Experiment with all the "good" typefaces to see which ones best fits your website's message <br />
+   d. You can keep trying different typefaces as we design and build the page. <br />
+
+`Font size and font weight`
+
+4. When choosing font-sizes, **limit choices** to make life easier. Use a **"type scale" tool** or other **per-defined range**.
+5. Use font size between 16px and 32px for **"normal" font**.
+6. For **long text** (like blog post), try a size of 20px or even bigger.
+7. For **headlines**, you can go really big (50px+) and bold (600+), **depending on personality**.
+8. For any text, don't use a font weight under 400 (regular)
+<figure>
+  <img src="./images/font-size/font-size.png" alt="Font Size" width="400" />
+  <figcaption>Font Size</figcaption>
+</figure>
+
+`Reading Experience`
+
+9. Use less than 75 characters per line.
+<figure>
+  <img src="./images/readabilities/char-per-line.png" alt="Character Per Line For Readability" width="400" />
+  <figcaption>Character Per Line For Readability Purpose</figcaption>
+</figure>
+
+10. For normal-sized text, use a line height between 1.5 and 2. For big text, go below 1.5.
+<figure>
+  <img src="./images/readabilities/line-height.png" alt="Line Height For Readability" width="400" />
+  <figcaption>Line Height For Readability Purpose</figcaption>
+</figure>
+
+- `NOTE: The smaller or longer the text, the larger the line height needs to be`
+
+11. Decrease letter spacing in headlines, if it looks unnatural.
+12. Experiment with all caps for short titles. Make them small and bold and decrease letter-spacing
+<figure>
+  <img src="./images/readabilities/short-title.png" alt="Short Title" width="400" />
+  <figcaption>Short Title Readability</figcaption>
+</figure>
+
+13. Usually, don't justify text.
+<figure>
+  <img src="./images/readabilities/text-justify-content.png" alt="Test Justification For Readability" width="400" />
+  <figcaption>Test Justification For Readability Purpose</figcaption>
+</figure>
+
+14. Don't center long text blocks unless these blocks are small.
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.

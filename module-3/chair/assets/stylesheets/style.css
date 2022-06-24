@@ -6,6 +6,13 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+:root {
+  --primary-font: 'Inter', sans-serif;
+  --font-wight-5: 500;
+  --font-wight-6: 600;
+  --font-wight-7: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +23,7 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: var(--primary-font);
 }
 
 .container {
@@ -37,6 +44,23 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:is(:link, :visited) {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--font-wight-5);
+  display: inline-block;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
