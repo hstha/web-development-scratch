@@ -253,6 +253,32 @@
 2. Typefaces have a certain roundness: make sure that border-radius `matches that roundness`.
 3. Use border-radius on `buttons, images, around icons, standout sections` and `other elements`.
 
+#### **Whitespace**
+
+- `Why whitespace`?
+  - The right about of whitespace makes designs look `clean`, `modern` and `polished`.
+  - Whitespace communicates how different pieces of information are `related to one another`.
+  - Whitespace implies `invisible relationships between the elements` of a layout.
+
+`Where To Use Whitespace`
+
+1. Use tons of whitespace `between sections`
+2. Use a lot (less than between section whitespace) of whitespace horizontally or vertically `between groups of elements`
+3. Use small whitespace `between elements`
+4. Inside groups of elements, try to use whitespace instead of lines
+
+`How much whitespace`
+
+5. The more some elements belong together, the closer they should be
+6. Start with `a lot of whitespace`. maybe even too much! Then **remove whitespace** from there
+
+- Too much whitespace looks `detached`, too little looks too `crammed`
+
+7. Match `other design choices`. If you have big text or big icons, we need more whitespace
+8. Try a hard rule, such as using multiple of 16px for all spacing
+
+   `2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128`
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
