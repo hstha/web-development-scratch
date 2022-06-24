@@ -222,6 +222,29 @@
 10. Don't confuse your users: icons need to make sense and `fit the text or action`
 11. Don't make icons larger than what they **were designed for**. If needed, **enclose them in a shape**
 
+#### **Shadows**
+
+- Shadow creates depth (3D): the more shadow, the **further away from the interface** the element is.
+- Shadow can be used in box and text
+- We add shadows to the element that we want to make it stand out
+
+`Use Shadows Well`
+
+1. You `don't have to use` shadows. Only use them if it makes sense for the `website personality`. The more serious and elegant the website is the lesser the shadow is used
+2. Use shadows in small doses: don't add shadows to every element.
+3. Go light on shadows, don't make them `too dark`.
+
+`Use Shadows In The Right Situation`
+
+4. Use `small shadows` for smaller elements that should stand out (to draw attention).
+
+- Smaller elements like call to action buttons, form element, photo
+
+5. Use `medium-sized shadows` for larger areas (`like entire section, card`) that should stand out a bit more
+6. Use `larger shadows` for elements (`like popover, notification, popup, menu on right click`) that should really `float above` the interface
+7. Experiment with changing shadows on mouse interaction (`like click and hover`)
+8. Experiment with colored shadows to added glows in the element
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
