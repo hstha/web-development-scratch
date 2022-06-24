@@ -279,6 +279,31 @@
 
    `2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128`
 
+#### **Visual Hierarchy**
+
+- `What is visual hierarchy`?
+  - It is about `establishing which elements` of a design `are the most important ones.`
+  - It is about `drawing attention` to these most important elements.
+  - It is about `defining a "path" for users`, to `guide` them through the page
+  - We use a combination of `position`, `size`, `colors`, `spacing`, `borders`, and `shadows` to establish a meaningful visual hierarchy between elements/components
+
+`Visual Hierarchy Fundaments`
+
+1. Position important elements closer to the top the page, where they get more attention.
+2. Use images mindfully, as they draw a lot of attention (larger images get more attention)
+3. Whitespace creates separation, so use whitespace strategically to emphasize elements
+
+`Visual Hierarchy For Text Elements`
+
+4. For text elements, use different `font size`, `font weight`, `color`, and `whitespace` to convey importance.
+5. What text elements to emphasize? `Titles`, `sub-titles`, `links`, `buttons`, `data points`, `icons`
+
+`Visual Hierarchy Between Components`
+
+6. Emphasize an important component using `background color`, `shadow`, or `border` (or multiple)
+7. Try emphasizing some component A over component B by `de-emphasizing component B`
+8. What components to emphasize? `Testimonials`, `call-to-action sections`, `highlight sections`, `preview cards`, `forms`, `pricing tables`, `important rows/columns in tables`, etc.
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
