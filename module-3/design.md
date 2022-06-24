@@ -104,6 +104,58 @@
 
 14. Don't center long text blocks unless these blocks are small.
 
+#### **Color**
+
+`Choosing Colors`
+
+1. Make the main color **match your website's personality**: colors convey meaning!
+
+- **Red** draws a ;pt pf attention, and symbolizes power, passion, and excitement.
+- **Orange** is less aggressive, and conveys happiness, cheerfulness, and creativity.
+- **Yellow** means joy, brightness, and intelligence
+- **Greens** represents harmony, nature, growth, and health.
+- **Blue** is associated with peace, trustworthiness, and professionalism.
+- **Purple** conveys wealth, wisdom, and magic.
+- **Pink** represents romance, care, and affection.
+- **Brown** is associated with nature, durability and comfort.
+- **Black** symbolizes power, elegance and minimalism, but also grief and sorrow.
+
+2. Use a good color tone! Don’t choose a random tone or CSS named colors.
+
+- `Tools used`: **open color**, **tailwindcss**, **flat ui colors**
+
+3. You need at least two types of colors in your color palette: a main color and a grey color
+4. With more experience, you can add more colors: accent (secondary) colors (use a tool)
+
+- `Tools used`: **palleton.com**, **coolors**
+
+5. For diversity, create lighter and darker “versions” (tints and shades)
+
+- `Tools used`: **Tint and Shade Generator**
+
+`When and How To use colors`
+
+6. Use your main color to draw attention to the most important elements on
+   the page
+
+- Important elements like `buttons`, `navbar`
+
+7. Use colors to add `interesting accents` or make `entire components or sections` stand out
+
+- `Like`: **New Features, Special Offers**
+
+8. You can try to use your color strategically in images and illustrations
+
+`Colors and Typography relation`
+
+9. On dark colored backgrounds, try to use a tint of the background (“lighter
+   version”) for text
+10. Text should usually not be completely black. Lighten if up it looks heavy and uninviting
+11. Don’t make text too light! Use a tool to check contrast between text and background colors
+
+- Contrast ratio needs to be at least `4:5:1 for normal text` and `3:1 for larger text` (18px+)
+- `Tools used`: **coolors**
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.

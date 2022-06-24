@@ -8,6 +8,11 @@ FONT SIZE SYSTEM (px)
 
 :root {
   --primary-font: 'Inter', sans-serif;
+  --primary-color: #087f5b;
+  --primary-color-tilt: #099268;
+  --gray-color: #343a40;
+  --gray-color-tilt: #495057;
+  --white-color: #fff;
   --font-wight-5: 500;
   --font-wight-6: 600;
   --font-wight-7: 700;
@@ -24,6 +29,7 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: var(--primary-font);
+  color: var(--gray-color);
 }
 
 .container {
@@ -47,10 +53,16 @@ h2 {
 }
 
 .btn:is(:link, :visited) {
+  background-color: var(--primary-color);
+  color: var(--white-color);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: var(--font-wight-5);
   display: inline-block;
+}
+
+.btn:is(:hover, :active) {
+  background-color: var(--primary-color-tilt);
 }
 
 .btn--big {
@@ -104,6 +116,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -154,5 +169,6 @@ h3 {
 }
 
 footer {
+  color: var(--gray-color-tilt);
   margin-bottom: 48px;
 }
