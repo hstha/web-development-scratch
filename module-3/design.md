@@ -304,6 +304,60 @@
 7. Try emphasizing some component A over component B by `de-emphasizing component B`
 8. What components to emphasize? `Testimonials`, `call-to-action sections`, `highlight sections`, `preview cards`, `forms`, `pricing tables`, `important rows/columns in tables`, etc.
 
+#### User Experience (UX)
+
+- `What is User Experience`?
+
+  > Design is not just what it `looks and feels like`. Design is `how it works`. - Steve Jobs
+
+  - What does `looks and feels like` mean?
+
+    - `User Interface (UI)` is the visual presentation of a product. It's how the graphical interface looks and feels like.
+    - For UI we generally consider
+      - Layout
+      - "Personality"
+      - Typography, colors, icons, and so on
+
+  - What does `how it works` mean?
+    - `User Experience (UX)` is the overall experience the user has while interacting with the product.
+    - To verify UX we ask questions like:
+      - Does the app feel logical and well thought out?
+      - Does the navigation work `intuitively`?
+      - Are users `reaching their goals`?
+
+- `UI and UX` **Design**
+  - `UI` is a graphical interface, so `UI Design` is what makes an interface `beautiful`
+  - `UX` is experience with interface, so `UX Design` is what makes an interface `useful and functional`.
+- UX design can `not` exist without UI design
+- `UX Design Guiding Principle`: **Goals**
+  - A website or application `exists for a reason`: a `user` has a goal for `visiting` it (generally to get a service), and a `business` has a goal for `creating` it (generally to provide a service).
+  - A good UX design aligns the user's goals with the business goals
+  - The main goal of UX is to provide a smooth UX to the customer while visiting the website to get the service(s).
+
+`UX Rules For` **Usability**
+
+1. Don't design complicated layouts.
+
+- Don't reinvent the wheel.
+- `Use patterns that users know`.
+- **Creativity is overrated in web design**
+- Familiarity of the website is way more important than creativity for day to day developer like us
+- Creativity is important for top 1% for the website or to win an award
+
+2. Make your call-to-action the `most prominent element`, and make the `text descriptive`.
+3. Use `blue text` and `underlined text` only for `links`.
+4. Animation should have a `purpose` and be `fast`: between 200 and 500ms
+5. In forms, align labels and fields in a `single vertical line`, to make the form `easier to scan`.
+6. Offer users `good feedback` for all actions: form error, form success, etc.
+7. Place action buttons where they will `create an effect` (law of locality)
+
+`UX Rules For Website Content`
+
+8. Use a `descriptive`, `keyword-focused headline` on our main page. Don't be vague or fancy.
+9. Only include `relevant information`, efficiently. `Cut out fluff` (unrelated images, text, illustrations, buttons, etc) and make the content 100% clear
+10. Use simple words. Avoid technical jargon and "smart-sounding" words.
+11. Break up long text with `sub-heading`, `images`, `block quotes`, `bullet points`, etc.
+
 ### Website Personalities
 
 1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
