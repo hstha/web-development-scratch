@@ -358,6 +358,24 @@
 10. Use simple words. Avoid technical jargon and "smart-sounding" words.
 11. Break up long text with `sub-heading`, `images`, `block quotes`, `bullet points`, etc.
 
+#### **Components/Layout**
+
+- Converting a blank page to a webpage is quite intimating at first.
+- There are certain steps that should be followed:
+
+  1. Creates `elements`
+  2. Use `common elements` to build `components`
+  3. With the help of `common layout patterns` to create `layout` with the help of `components`
+  4. And than assemble different `layout areas` into a complete, final page
+
+  ***
+
+  | Elements | -----> | Components | -----> | Layouts | -----> | Webpage |
+
+  ***
+
+- Use `common elements` and `components` to convey your website's information.
+
 ### Website Personalities
 
 - `What is website personality`?
@@ -543,3 +561,21 @@
   <img src="./images/website-personalities/playful-fun.png" alt="Playful/Fun Website Personalities" width="500" height="700" />
   <figcaption>Playful/Fun Website Personalities.</figcaption>
 </figure>
+
+## Steal like an artists
+
+- In order to design a fantastic website knowing about
+
+  - Design `Ingredients`,
+  - Website `Personalities` and
+  - Design `Guidelines & Rules`
+  - Art to `steal like an artist` and `getting inspired from them`.
+
+    - What does `steal like an artist and getting inspired from them` really means?
+
+      - By stealing doesn't means to copy the whole design completely. Instead, it's about `taking good parts` from many websites and `adapting them` to our needs by following different rules and guidelines
+      - Getting a lot of inspiration from other well designed website is really really important in order to create well our own design
+      - Not everybody is genius to create new innovative design every time, so we steal 😅
+      - In order to get inspiration for design we look into a lot of aggregator website
+
+        - `Tools used`: **land-book, one page love, awwwards, screenlane**
