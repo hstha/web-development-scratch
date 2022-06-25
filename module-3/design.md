@@ -360,43 +360,185 @@
 
 ### Website Personalities
 
-1. **Serious/Elegant**: For luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images.
+- `What is website personality`?
+  - It is the general feeling or vibe that we want to transmit or invoke in to our users when they visit the website.
+- `How to choose the website personality`?
+  - Ask questions like:
+    - How do you want website to `appear to users`?
+    - What "`vibe`" do we want to transmit?
+  - Based on the answer choose one the `website personalities`.
+  - Than apply that `personality traits` to each `design ingredient`
+
+1. **Serious/Elegant**:
+
+| `overview`                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------- |
+| For luxury and elegance, based on `thin serif typefaces, golden or pastel colors`, and big high-quality images. |
+
+| `industries`                                           |
+| ------------------------------------------------------ |
+| Real estate, high fashion, luxury products or services |
+
+| `ingredient`  | `description`                                                                     |
+| ------------- | --------------------------------------------------------------------------------- |
+| typography    | Serif typefaces (especially in headings), light font weight, small body font size |
+| colors        | Gold, pastel colors, black, dark blue or grey                                     |
+| images        | Big, high-quality images are used to feature elegant and expensive products       |
+| icons         | Usually no icons, but thin icons and lines may be used                            |
+| shadows       | usually no shadows                                                                |
+| border-radius | usually no border-radius                                                          |
+| layout        | creative and experimental layout is quite common                                  |
+
 <figure>
   <img src="./images/website-personalities/serious-elegant.png" alt="Serious/Elegant Website Personalities" width="500" height="700" />
   <figcaption>Serious/Elegant Website Personalities.</figcaption>
 </figure>
 
-2. **Minimalist/Simple**: Focusses on the essential text content, using small or medium-sized sans-serif black text, lines, and few images and icons.
+2. **Minimalist/Simple**:
+
+| `overview`                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------- |
+| Focusses on the essential text content, using small or medium-sized sans-serif black text, lines, and few images and icons. |
+
+| `industries`                                                 |
+| ------------------------------------------------------------ |
+| Fashion, portfolios, minimalism companies, software startups |
+
+| `ingredient`  | `description`                                                                                                    |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| typography    | Boxy/squared sans-serif typefaces, small body font sizes                                                         |
+| colors        | Usually black or dark grey, on pure white background. Usually just one color throughout the design               |
+| images        | Few images, which can be used to add some color to the design. Usually no illustrations, but if, than just black |
+| icons         | Usually no icons, but small simple black icons may be used                                                       |
+| shadows       | usually no shadows                                                                                               |
+| border-radius | usually no border-radius                                                                                         |
+| layout        | Simple layout, a narrow one-column layout is quite common                                                        |
+
 <figure>
   <img src="./images/website-personalities/minimalist-simple.png" alt="Minimalist/Simple Website Personalities" width="500" height="700" />
   <figcaption>Minimalist/Simple Website Personalities.</figcaption>
 </figure>
 
-3. **Plain/Neutral**: Design that gets out of the way by using neutral and small typefaces, and a very structured layout.
+3. **Plain/Neutral**:
+
+| `overview`                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------- |
+| Design that gets out of the way by using `very neutral and small typefaces`, and a boxy, structured, and condensed layout. |
+
+| `industries`                                                                              |
+| ----------------------------------------------------------------------------------------- |
+| Well-established corporations, companies that don't want to make an impact through design |
+
+| `ingredient`  | `description`                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------- |
+| typography    | Neutral-looking sans-serif typefaces are used, and text is usually small and doesn't have visual impact |
+| colors        | Safe colors are employed, nothing too bright or to washed-out. Blues and blacks are common              |
+| images        | Images are frequently used, but usually in a small format                                               |
+| icons         | Usually no icons, but simple icons may be used                                                          |
+| shadows       | usually no shadows                                                                                      |
+| border-radius | usually no border-radius                                                                                |
+| layout        | Structured and condensed layout, with lots of boxes and rows                                            |
+
 <figure>
   <img src="./images/website-personalities/plain-neutral.png" alt="Plain/Neutral Website Personalities" width="500" height="700" />
   <figcaption>Plain/Neutral Website Personalities.</figcaption>
 </figure>
 
-4. **Bold/Confident**: Makes an impact, by featuring big and bold typography, paired with confident use of big and bright colored books.
+4. **Bold/Confident**:
+
+| `overview`                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------- |
+| Design that makes an impact, by featuring `big and bold typography`, paired with confident use of `big colored blocks`. |
+
+| `industries`                                                    |
+| --------------------------------------------------------------- |
+| Digital agencies, software startups, travel, "strong" companies |
+
+| `ingredient`  | `description`                                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| typography    | Boxy/squared sans-serif typefaces, big and bold typography, especially headings. Uppercase headings are common |
+| colors        | Usually multiple bright colors. Big color blocks/sections are used to draw attention                           |
+| images        | Lots of big images are usually displayed                                                                       |
+| icons         | Usually no icons                                                                                               |
+| shadows       | usually no shadows                                                                                             |
+| border-radius | usually no border-radius                                                                                       |
+| layout        | All kinds of layouts, no particular tendencies                                                                 |
+
 <figure>
   <img src="./images/website-personalities/bold-confident.png" alt="Bold/Confident Website Personalities" width="500" height="700" />
   <figcaption>Bold/Confident Website Personalities.</figcaption>
 </figure>
 
-5. **Clam/Peaceful**: For products and services that care, transmitted by calming pastel colors, soft serif headings, and matching imaged/illustrations.
+5. **Clam/Peaceful**:
+
+| `overview`                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| For products and services that care about the consumer, which is transmitted by `calming pastel colors`, `soft serif headings`, and matching imaged/illustrations. |
+
+| `industries`                                               |
+| ---------------------------------------------------------- |
+| Healthcare, all products with focus on consumer well-being |
+
+| `ingredient`  | `description`                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| typography    | Soft serif typefaces frequently used for headings, but sans-serif headings might be used too (e.g. for software products) |
+| colors        | Pastel/washed-out colors: light oranges, yellows, browns, greens, blues                                                   |
+| images        | Images and illustrations are usual, matching calm color palette                                                           |
+| icons         | Icons are quite frequent                                                                                                  |
+| shadows       | Usually no shadows, but might be used sparingly                                                                           |
+| border-radius | Some border-radius is usual                                                                                               |
+| layout        | All kinds of layouts, no particular tendencies                                                                            |
+
 <figure>
   <img src="./images/website-personalities/clam-peaceful.png" alt="Clam/Peaceful Website Personalities" width="500" height="700" />
   <figcaption>Clam/Peaceful Website Personalities.</figcaption>
 </figure>
 
-6. **Startup/Upbeat**: Widely used in startups, featuring medium-sized sans-serif typefaces, light-grey text and backgrounds, and rounded elements.
+6. **Startup/Upbeat**:
+
+| `overview`                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------- |
+| Widely used in startups, featuring `medium-sized` sans-serif typefaces, `light-grey text and backgrounds`, and rounded elements. |
+
+| `industries`                                          |
+| ----------------------------------------------------- |
+| Software startups, and other modern-looking companies |
+
+| `ingredient`  | `description`                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| typography    | Medium-sized headings (not too large), usually one sans-serif typeface in whole design. Tendency for lighter text colors |
+| colors        | Blues, greens and purples ar widely used. Lots of light backgrounds (mainly gray), gradients are also common             |
+| images        | Images or illustrations are always used. 3D illustrations are modern. Sometimes patterns and shapes add visual details   |
+| icons         | Icons are very frequent                                                                                                  |
+| shadows       | Subtle shadows are frequent. Glows are becoming modern                                                                   |
+| border-radius | Border-radius is very common                                                                                             |
+| layout        | Rows of cards and z-patterns are usual, as well as animations                                                            |
+
 <figure>
   <img src="./images/website-personalities/startup-upbeat.png" alt="Startup/Upbeat Website Personalities" width="500" height="700" />
   <figcaption>Startup/Upbeat Website Personalities.</figcaption>
 </figure>
 
-7. **Playful/Fun**: Colorful and round designs, fueled by creative elements like hand-drawn icons or illustrations, animations and fun language.
+7. **Playful/Fun**:
+
+| `overview`                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------- |
+| `Colorful and round` designs, fueled by `creative elements` like hand-drawn icons or illustrations, animations and fun language. |
+
+| `industries`                          |
+| ------------------------------------- |
+| Child products, animal products, food |
+
+| `ingredient`  | `description`                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| typography    | Round and creative (e.g. handwritten) ans-serif typefaces are frequent. Centered text is more common     |
+| colors        | Multiple colors are frequently used to design a colorful layout, all over backgrounds and text           |
+| images        | Images, hand-drawn (or 3D) illustrations, and geometric shapes and patterns are all very frequently used |
+| icons         | Icons are very frequent, may times in a hand-drawn style                                                 |
+| shadows       | Subtle shadows are quite common, bit not always used                                                     |
+| border-radius | Border-radius is very common                                                                             |
+| layout        | All kinds of layouts, no particular tendencies                                                           |
+
 <figure>
   <img src="./images/website-personalities/playful-fun.png" alt="Playful/Fun Website Personalities" width="500" height="700" />
   <figcaption>Playful/Fun Website Personalities.</figcaption>
