@@ -1,0 +1,135 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --primary-font: 'Inter', sans-serif;
+  --primary-color: #087f5b;
+  --primary-color-tilt: #099268;
+  --gray-color: #343a40;
+  --gray-color-tilt: #adb5bd;
+  --white-color: #fff;
+  --white-color-tile: #e6fcf5;
+  --box-shadow: rgba(0, 0, 0, 0.07);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: var(--primary-font);
+  color: var(--gray-color);
+  line-height: 1;
+}
+
+
+/* ------------------------ */
+/* Carousel */
+/* ------------------------ */
+.carosuel {
+  width: 800px;
+  margin: 100px auto;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 32px 48px 32px 86px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px 0 var(--box-shadow);
+  transform: scale(1.5);
+}
+
+.testimonial__text {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.testimonial__author {
+  color: var(--white-color-tile);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.testimonial__job {
+  color: var(--white-color-tile);
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--white-color);
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+
+  box-shadow: 10px 10px 32px 0 var(--box-shadow);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: var(--primary-color);
+}
+
+.dots {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: (-50%, 0);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: var(--white-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--primary-color);
+}
+
+
