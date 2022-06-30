@@ -19,6 +19,24 @@
   height: 2.2rem;
 }
 
+/* Mobile navigation */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: var(--grey-color-2);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* ************************** */
 /* navigation section */
 /* ************************** */

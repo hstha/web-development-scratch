@@ -47,6 +47,7 @@
   Small: 1.05;
   Medium: 1.2;
   Paragraph: 1.6;
+  large: 1.8;
 
 - Letter spacing
   -0.5px
