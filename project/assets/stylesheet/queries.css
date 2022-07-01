@@ -1,0 +1,286 @@
+/* 
+  rem and em do not depend on html font-size in media queries!
+  Instead, 1rem = 1em = 16px
+*/
+
+/* ************************** */
+/* Below 1344px (Smaller desktops) */
+/* ************************** */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ************************** */
+/* Below 1200px (Landscape Tablets) */
+/* ************************** */
+@media (max-width: 75em) {
+  html {
+    /* 9/16 = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav__list {
+    gap: 3.2rem;
+  }
+
+  .hero .container{
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* ************************** */
+/* Below 944px (Tablets) */
+/* ************************** */
+@media (max-width: 59em) {
+  /* 8 / 16 =  0.5 */
+  html {
+    font-size: 50%;
+  }
+
+  .icon-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide an element without using display: none */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-open .main-nav {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav__link:is(:link, :visited) {
+    font-size: 3rem;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem
+  }
+
+  .hero__text-box, .hero-img-box {
+    text-align: center;  
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero__img {
+    width: 60%;
+  }
+
+  .logo img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal__content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .testimonials.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery.grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta-container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}
+
+/* ************************** */
+/* Below 744px (Tablets) */
+/* ************************** */
+@media (max-width: 44em) {
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid--3-cols, .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col, .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* ************************** */
+/* Below 544px (Phones) */
+/* ************************** */
+@media (max-width: 34em) {
+  .btn, .btn:is(:link, :visited) {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols, .grid--3-cols, .grid--1-cols, .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem 3.2rem 3.8rem;
+  }
+
+  .hero__img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  section {
+    padding: 0;
+    padding-bottom: 3.8rem;
+  }
+
+  .gallery.grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta__img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta__text-box {
+    padding: 3.2rem;
+  }
+
+  .hero .container {
+    padding: 0;
+  }
+
+  .hero__img-box {
+    text-align: center;
+  }
+
+  .feature {
+    text-align: center;
+  }
+}

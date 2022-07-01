@@ -1,0 +1,576 @@
+/* ************************** */
+/* header section */
+/* ************************** */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--primary-color-shades); */
+
+  /* setting this height because we want to make navigation sticky 
+  which is easily done when height is defined */
+  height: 9.6rem;
+
+  padding: 0 var(--space-4-8);
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* ************************** */
+/* navigation section */
+/* ************************** */
+.main-nav__list {
+  /* display: flex; */
+  gap: 3.2rem;
+}
+
+.main-nav__link:is(:link, :visited) {
+  color: var(--grey-color-2);
+  font-weight: var(--bold-semi-bold);
+  font-size: var(--space-1-2);
+  transition: all .5s;
+}
+
+.main-nav__link:is(:hover, :active) {
+  color: var(--primary-color-tints);
+}
+
+.active {
+  color: var(--primary-color-tints);
+}
+
+.main-nav__link.main-nav__cta:is(:link, :visited) {
+  padding: var(--space-1-2);
+  border-radius: var(--border-radius-default);
+  background-color: var(--primary-color);
+  color: var(--white-color-1);
+}
+
+.main-nav__link.main-nav__cta:is(:hover, :active) {
+  background-color: var(--primary-color-tints);
+}
+
+/* ************************** */
+/* hero section */
+/* ************************** */
+.hero {
+  /* background-color: var(--primary-color-shades);
+  padding: var(--space-4-6) 0 var(--space-9-6) 0; */
+  margin-top: -9.2rem;
+}
+
+.hero .container {
+  max-width: 130rem;
+  align-items: center;
+  gap: var(--space-9-6);
+}
+
+.hero__description {
+  font-size: var(--space-2);
+  line-height: var(--line-height-paragraph);
+  margin-bottom: var(--space-4-8);
+}
+
+.delivered__meals {
+  display: flex;
+  gap: var(--space-1-6);
+  align-items: center;
+  margin-top: var(--space-8);
+}
+
+.delivered__imgs {
+  display: flex;
+}
+
+.delivered__imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid var(--primary-color-shades);
+}
+
+.delivered__imgs img:last-child {
+  margin: 0;
+}
+
+.delivered__text {
+  font-size: var(--space-1-8);
+  font-weight: var(--bold-semi-bold);
+}
+
+.delivered__text span {
+  color: var(--primary-color-tints);
+  font-weight: var(--bold-bold);
+}
+
+.hero__img {
+  width: 100%;
+}
+
+
+/* ************************** */
+/* featured section */
+/* ************************** */
+.heading-featured-in {
+  color: var(--grey-color-3);
+  font-size: var(--font-size-1-4);
+  font-weight: var(--bold-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-small);
+  margin-bottom: var(--space-2-4);
+}
+
+.logos {
+  justify-content: space-around;
+}
+
+.logos img {
+  height: var(--space-2-4);
+
+  /* This is the trick to make the image color grey */
+  /* brightness(0) will make the image black */
+  filter: brightness(0);
+  /* This will decrease the opacity of the color */
+  opacity: 50%;
+}
+
+/* ************************** */
+/* how it work section */
+/* ************************** */
+.how .grid {
+  gap: var(--space-9-6);
+}
+
+.step-number {
+  font-size: var(--font-size-8-6);
+  font-weight: var(--bold-semi-bold);
+  color: var(--white-color-2);
+  margin-bottom: var(--space-1-2);
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  position: relative;
+}
+
+.step-img-box::before, .step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* This height will not be set somehow */
+  /* height: 60%; */
+
+  /* THis is an hack to set height if we can't set the height directly */
+  padding-bottom: 60%;
+  z-index: -2;
+  background-color: var(--primary-color-shades);
+}
+
+.step-img-box::after {
+  width: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
+  background-color: var(--primary-color-shades-1);
+}
+
+.step-img-box img {
+  width: 35%;
+}
+
+/* ************************** */
+/* meals section */
+/* ************************** */
+.meal {
+  box-shadow: var(--box-shadow-1);
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.meal__content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  text-align: left;
+}
+
+.meal__tags {
+  margin-bottom: var(--space-1-2);
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem;
+
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--grey-color-2);
+  border-radius: var(--border-radius-pill);
+  font-weight: var(--bold-semi-bold);
+}
+
+.tag--veg {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal__title {
+  font-size: var(--space-2-4);
+  color: var(--grey-color-2);
+  font-weight: var(--bold-semi-bold);
+  margin-bottom: var(--space-3-2);
+}
+
+.meal__attributes {
+  gap: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1-6);
+}
+
+.meal__attribute {
+  font-size: var(--space-1-8);
+}
+
+.meal__icon {
+  height: var(--space-2-4);
+  width: var(--space-2-4);
+  color: var(--primary-color);
+}
+
+.meal__img {
+  width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* ************************** */
+/* meals section */
+/* ************************** */
+.testimonials.grid {
+  gap: 0;
+}
+
+.testimonials {
+  background-color: var(--primary-color-shades);
+  padding: 0;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials-container .grid {
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial__img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial__text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial__name {
+  font-size: 1.6rem;
+  color: var(--grey-color-4);
+}
+
+.gallery.grid {
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery__item img:hover {
+  transform: scale(1.1);
+}
+
+/* ************************** */
+/* meals section */
+/* ************************** */
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: center;
+  padding: 4.6rem;
+  border: 2px solid var(--primary-color-shades);
+}
+
+.pricing-plan--complete {
+  background-color: var(--primary-color-shades);
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--grey-color-2);
+  background-color: var(--primary-color);
+  padding: 0.8rem 3.2rem;
+
+  position: absolute;
+  top: 4%;
+  right: -8%;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: var(--primary-color);
+  font-weight: var(--bold-semi-bold);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: var(--bold-semi-bold);
+  color: var(--grey-color-2);
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: var(--bold-medium);
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--grey-color-4)
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 9.6rem;
+  /* margin-top: -4.6rem; */
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: var(--primary-color-shades);
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--grey-color-2);
+  font-weight: var(--bold-bold);
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ************************** */
+/* cta section */
+/* ************************** */
+.cta-container {
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow-2);
+  border-radius: var(--border-radius-medium);
+  background: linear-gradient(to right bottom, var(--primary-color), var(--primary-color-shades-2));
+  overflow: hidden;
+}
+
+.cta__text-box {
+  color: var(--primary-color-tints-1);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: var(--primary-color-tints-1);
+  margin-bottom: 3.2rem;
+}
+
+.cta__text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta__img-box {
+  background-image: linear-gradient(to right bottom, rgba(230, 125, 34, 0.35), rgba(235, 151, 78, 0.35)), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta__form {
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta__form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: var(--bold-medium);
+  margin-bottom: 1.2rem;
+}
+
+.cta__form :is(input, select) {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--primary-color-shades);
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 10%);
+}
+
+.cta__form input::placeholder {
+  color: var(--grey-color-5);
+}
+
+.cta__form button {
+  align-self: end;
+  padding: 1.2rem;
+  /* grid-column: 1 / span 1; */
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8px rgba(253, 242, 233, 0.501);
+}
+
+/* ************************** */
+/* footer section */
+/* ************************** */
+.footer {
+  padding: 9.6rem 0;
+  background-color: var(--primary-color-shades-1);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  gap: 0;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  gap: 2.4rem
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--grey-color-6);
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer__heading {
+  font-size: 1.8rem;
+  font-weight: var(--bold-medium);
+  margin-bottom: 3.2rem;
+}
+
+.footer__nav {
+  gap: 2.4rem;
+}
+
+.footer__link:is(:link, :visited) {
+  font-size: 1.6rem;
+  color: var(--grey-color-6);
+  transition: all 0.3s;
+}
+
+.footer__link:is(:hover, :active) {
+  color: var(--grey-color-1);
+}

@@ -1,0 +1,11 @@
+.mr-sm {
+  margin-right: var(--space-1-6);
+}
+
+.mb-md {
+  margin-bottom: 4.8rem;
+}
+
+.text-center {
+  text-align: center;
+}

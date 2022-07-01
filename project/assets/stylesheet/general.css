@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px solid var(--primary-color);
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8px rgba(230, 125, 34, 0.509);
+}
+
+.html {
+  overflow-x: hidden;
+
+  /* enable smooth scrolling */
+  /* doesn't work on safari */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: var(--line-height-default);
+  font-weight: var(--bold-default);
+  color: var(--grey-color-1);
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: var(--bold-medium);
+}
+
+section {
+  padding: var(--space-4-8) 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  /* TODO: latter for screen size less that 1300px add */
+  padding: 0 var(--space-3-2);
+}
+
+.heading-primary {
+  font-size: var(--space-5-2);
+  line-height: var(--line-height-small);
+  margin-bottom: var(--space-3-2);
+}
+
+.heading-secondary {
+  font-size: var(--space-4-4);
+  line-height: var(--line-height-medium);
+  margin-bottom: var(--space-9-6);
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: var(--line-height-medium);
+  margin-bottom: var(--space-3-2);
+}
+
+.heading-primary, .heading-secondary, .heading-tertiary {
+  font-weight: var(--bold-bold);
+  color: var(--grey-color-2);
+  letter-spacing: -0.5px;
+}
+
+.subheading {
+  display: block;
+  font-size: var(--space-1-6);
+  font-weight: var(--bold-medium);
+  color: var(--primary-color-tints);
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: var(--space-1-6);
+}
+
+.link:is(:link, :visited) {
+  display: inline-block;
+  color: var(--primary-color);
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+  transition:  all 0.3s;
+}
+
+.link:is(:hover, :active) {
+  color: var(--primary-color-shades);
+  border-bottom: 1px solid transparent;
+}
+
+.btn--form {
+  background-color: var(--primary-color-tints-1);
+  color: var(--primary-color-shades);
+}
+
+.btn, .btn:is(:link, :visited) {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--space-2);
+  padding: var(--space-1-6) var(--space-3-2);
+  border-radius: var(--border-radius-default);
+  transition: all 0.5s;
+  font-weight: var(--bold-semi-bold);
+
+  /* necessary for button only */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--filled:is(:link, :visited) {
+  background-color: var(--primary-color);
+  color: var(--white-color-1);
+}
+
+.btn--filled:is(:hover, :active) {
+  background-color: var(--primary-color-tints);
+}
+
+.btn--outline:is(:link, :visited) {
+  background-color: var(--white-color-1);
+  color: var(--primary-color);
+}
+
+.btn--outline:is(:hover, :active) {
+  background-color: var(--primary-color-shades);
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px var(--primary-color);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-color);
+}
