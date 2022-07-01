@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
+    />
 
     <!-- 
       This is important for responsive design 
@@ -11,6 +15,14 @@
       Without this tag we won't be able to code responsive website compatible for various screen size
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Adding favicon -->
+    <!-- This works for the browser -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <!-- This works for ios -->
+    <link rel="apple-touch-icon" href="./assets/img/favicon-182.png" />
+    <!-- This works for android -->
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,9 +39,9 @@
     <link rel="stylesheet" href="./assets/stylesheet/helper.css" />
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
     <link rel="stylesheet" href="./assets/stylesheet/queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again</title>
 
-    <!-- JS -->
+    <!-- icon icon JS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -38,11 +50,18 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- JS -->
+    <script defer src="./assets/js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </head>
   <body>
     <!-- Header Section Start  -->
     <header class="header">
-      <a href="/">
+      <a href="#">
         <img
           src="./assets/img/omnifood-logo.png"
           alt="Omifood logo"
@@ -53,12 +72,36 @@
 
       <nav aria-label="Navigation related to page navigation" class="main-nav">
         <ul class="main-nav__list">
-          <li><a class="main-nav__link" href="#">How It Works</a></li>
-          <li><a class="main-nav__link" href="#">Meals</a></li>
-          <li><a class="main-nav__link" href="#">Testimonials</a></li>
-          <li><a class="main-nav__link" href="#">Pricing</a></li>
           <li>
-            <a class="main-nav__link main-nav__cta" href="#">Try for free</a>
+            <a class="main-nav__link" onclick="hideNavigation()" href="#how"
+              >How It Works</a
+            >
+          </li>
+          <li>
+            <a class="main-nav__link" onclick="hideNavigation()" href="#meals"
+              >Meals</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav__link"
+              onclick="hideNavigation()"
+              href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a class="main-nav__link" onclick="hideNavigation()" href="#pricing"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav__link main-nav__cta"
+              onclick="hideNavigation()"
+              href="#cta"
+              >Try for free</a
+            >
           </li>
         </ul>
       </nav>
@@ -72,7 +115,7 @@
 
     <main>
       <!-- Hero Section Start -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container grid grid--2-cols">
           <div class="hero__text-box">
             <h1 class="heading-primary">
@@ -121,18 +164,31 @@
             <!-- customer photos end -->
           </div>
           <div class="hero__img-box">
-            <img
-              class="hero__img"
-              src="./assets/img/hero.png"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <!-- 
+              .webp is not supported in all browser, but hero.png has very great size than that of hero.webp
+
+              - So we need a way to render this two image depending upon the support. 
+              - That's were picture tag comes into play. This is where we define multiple sources and one of the source will be picked by the browser depending upon its support and render in the img tag
+            -->
+            <picture>
+              <source srcset="assets/img/hero.webp" type="image/webp" />
+              <source srcset="assets/img/hero.png" type="image/png" />
+
+              <!-- This is required here to load img -->
+              <!-- Always keep fallback image as source -->
+              <img
+                class="hero__img"
+                src="./assets/img/hero.png"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
       <!-- Hero Section End -->
 
       <!-- Featured in Section Start -->
-      <section class="featured">
+      <section id="featured" class="featured">
         <div class="container text-center">
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos flex">
@@ -156,7 +212,7 @@
       <!-- Featured in Section End -->
 
       <!-- How it works Section Start -->
-      <section class="how">
+      <section id="how" class="how">
         <div class="container text-center">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -222,7 +278,7 @@
       <!-- How it works Section End -->
 
       <!-- Meal Section Start -->
-      <section class="meals">
+      <section id="meals" class="meals">
         <div class="container text-center">
           <span class="subheading">Sample meals</span>
           <h2 class="heading-secondary">
@@ -337,14 +393,14 @@
           </div>
         </div>
         <div class="container all-recipes">
-          <a href="#" class="link" See all recipes &rarr;></a>
+          <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
       <!-- Meal Section End -->
 
       <!-- Testimonials Section Start -->
-      <section class="testimonials grid grid--2-cols">
-        <div class="testimonials-container">
+      <section id="testimonials" class="testimonials grid grid--2-cols">
+        <div class="testimonials-container text-center">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
 
@@ -480,7 +536,7 @@
       <!-- Testimonials Section End -->
 
       <!-- Pricing Section Start -->
-      <section class="pricing">
+      <section id="pricing" class="pricing">
         <div class="container text-center">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -513,7 +569,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--filled">Starting eating well</a>
+              <a href="#cta" class="btn btn--filled">Starting eating well</a>
             </div>
           </div>
           <div class="pricing-plan pricing-plan--complete">
@@ -591,7 +647,7 @@
       <!-- Pricing Section End -->
 
       <!-- Call To Action Section Start -->
-      <section class="cta">
+      <section id="cta" class="cta">
         <div class="container">
           <div class="cta-container grid grid--2-cols">
             <div class="cta__text-box">
@@ -653,7 +709,7 @@
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col flex flex--column">
-          <a href="/" class="footer__logo">
+          <a href="#" class="footer__logo">
             <img
               src="./assets/img/omnifood-logo.png"
               alt="Omifood logo"
@@ -681,7 +737,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="address-col">

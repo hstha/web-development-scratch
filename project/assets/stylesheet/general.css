@@ -13,6 +13,10 @@
 
 .html {
   overflow-x: hidden;
+
+  /* enable smooth scrolling */
+  /* doesn't work on safari */
+  scroll-behavior: smooth;
 }
 
 body {
